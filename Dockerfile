@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 FROM rockylinux:8 AS build
-COPY lustre-client-8.6.repo /etc/yum.repos.d/
+# COPY lustre-client-8.6.repo /etc/yum.repos.d/
 RUN <<EOF
  dnf install -y iproute bind-utils iputils
  dnf clean all
